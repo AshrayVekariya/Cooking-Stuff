@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.carousel .thumbs-wrapper {
+    margin: 0px !important;
+}
+
+.carousel .control-dots .dot {
+    opacity: 1 !important;
+    height: 19px !important;
+    width: 19px !important;
+}
+
+.carousel .control-dots .dot.selected, .react-multi-carousel-dot--active button {
+    background: #F99106 !important;
+}
+
+.react-multi-carousel-dot button{
+    height: 19px !important;
+    width: 19px !important;
+    border: none !important;
+    background: #FFE1E1;
+    margin-right: 13px !important;
+}
