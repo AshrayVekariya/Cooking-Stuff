@@ -5,7 +5,7 @@ import Button from "@/app/components/buttons/Button";
 
 const HeroCard = ({ data }) => {
     return (
-        <div className={`${data.bgImg} min-h-[36rem] md:min-h-[40.375rem] 2xl:min-h-[50rem] bg-cover bg-center`}>
+        <div key={"hero-card-sec"} className={`${data.bgImg} min-h-[36rem] md:min-h-[40.375rem] 2xl:min-h-[50rem] bg-cover bg-center`}>
             <div className="container mx-auto px-4 lg:px-0">
                 <div className={`${data.cardContentStyle}`}>
                     {

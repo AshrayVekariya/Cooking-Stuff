@@ -7,7 +7,7 @@ import { contactMenu } from "@/app/constants/contactUsMenu";
 
 const ContactUsSection = ({ yesevaOne }) => {
     return (
-        <div>
+        <div key={"contact-detail-sec"}>
             <div className="bg-[#FFF2F2]">
                 <div className="container mx-auto px-4 lg:px-0 pb-[2.688rem]">
                     <div className="pt-[3.75rem]">

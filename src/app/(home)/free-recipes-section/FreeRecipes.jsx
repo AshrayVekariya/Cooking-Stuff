@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const FreeRecipesSection = ({ yesevaOne, bg, freeCourseRecipesMenu }) => {
     return (
-        <div className={`${bg ? 'bg-[#fff]' : 'bg-[#FFF2F2]'}`}>
+        <div key={"free-all-recipes"} className={`${bg ? 'bg-[#fff]' : 'bg-[#FFF2F2]'}`}>
             <div className="container mx-auto px-4 lg:px-0">
                 <div className="py-[3.75rem]">
                     <div className={`${yesevaOne.className} text-center`}>

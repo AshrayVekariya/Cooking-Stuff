@@ -6,7 +6,7 @@ import { healthyTastyRecipesMenu } from "@/app/constants/healthyTastyRecipesMenu
 
 const HealthyTastyRecipesSection = ({yesevaOne}) => {
     return (
-        <div key={"tasty"} className="bg-[linear-gradient(to_right_bottom,#ffffffde,#ffffffde),url('/assets/images/healthy-and-tasty/bg-healthy.png')] bg-cover bg-center">
+        <div key={"healthy-and-tasty-uniq"} className="bg-[linear-gradient(to_right_bottom,#ffffffde,#ffffffde),url('/assets/images/healthy-and-tasty/bg-healthy.png')] bg-cover bg-center">
             <div className="container mx-auto px-4 lg:px-0">
                 <div className="py-[3.75rem]">
                     <div className={`${yesevaOne.className} text-center`}>
