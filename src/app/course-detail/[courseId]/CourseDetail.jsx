@@ -19,7 +19,7 @@ const CourseDetailSection = ({ yesevaOne }) => {
     useEffect(() => {
         const data = allMenu.concat(featuredMenu, freeRecipesMenu, healthyTastyRecipesMenu)
         setAllMenu(data)
-    }, [featuredMenu, freeRecipesMenu, healthyTastyRecipesMenu])
+    }, [allMenu])
 
     useEffect(() => {
         if (allMenu.length) {
