@@ -4,7 +4,7 @@ import Posts from "./PostCard";
 
 const ReadOurPostsSection = ({yesevaOne}) => {
     return (
-        <div className="bg-[#FFF2F2]">
+        <div key={"post"} className="bg-[#FFF2F2]">
             <div className="container mx-auto px-4 lg:px-0">
                 <div className="py-[3.75rem]">
                     <div className={`${yesevaOne.className} text-center`}>

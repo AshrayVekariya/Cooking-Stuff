@@ -4,7 +4,7 @@ import { featuredMenu } from "@/app/constants/featuredMenu";
 
 const FeaturedSection = ({yesevaOne}) => {
     return (
-        <div className="bg-[linear-gradient(to_right_bottom,#ffffffde,#ffffffde),url('/assets/images/featured/featured-bg.png')] bg-cover bg-center cursor-pointer">
+        <div key={"FeaturedSection"} className="bg-[linear-gradient(to_right_bottom,#ffffffde,#ffffffde),url('/assets/images/featured/featured-bg.png')] bg-cover bg-center cursor-pointer">
             <div className="container mx-auto px-4 lg:px-0">
                 <div className="py-[3.75rem]">
                     <div className={`${yesevaOne.className} text-center`}>

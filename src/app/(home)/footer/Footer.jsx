@@ -15,7 +15,7 @@ const privacyMenu = [
 
 const FooterSection = () => {
     return (
-        <div className="min-h-[95px] bg-[#F99106] py-5 md:py-0 flex items-center">
+        <div key={"footer"} className="min-h-[95px] bg-[#F99106] py-5 md:py-0 flex items-center">
             <div className="container mx-auto px-4 lg:px-0">
                 <div className="flex text-white items-center justify-between flex-wrap">
                     <p className="text-xl">@ Copyright 2022. All Rights Reserved by Cooking Stuff</p>

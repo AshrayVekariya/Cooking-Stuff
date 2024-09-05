@@ -70,7 +70,7 @@ const data = [
 
 const HeroSection = ({ yesevaOne }) => {
     return (
-        <div className={yesevaOne.className}>
+        <div key={"hero"} className={yesevaOne.className}>
             <Carousel
                 showArrows={false}
                 showIndicators={true}
