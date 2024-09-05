@@ -17,9 +17,9 @@ const FeaturedSection = ({ yesevaOne }) => {
                         {
                             featuredMenu.map((item, index) => {
                                 return (
-                                    <div key={`featured-${index}`}>
+                                    <Fragment key={`featured-${index}`}>
                                         <Card items={item} index={index} />
-                                    </div>
+                                    </Fragment>
                                 )
                             })
                         }
