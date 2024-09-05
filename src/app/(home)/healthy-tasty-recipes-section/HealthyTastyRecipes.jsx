@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Card from "@/app/components/card/Card";
 import Button from "@/app/components/buttons/Button";
 import { FaArrowRight } from "react-icons/fa6";
 import { healthyTastyRecipesMenu } from "@/app/constants/healthyTastyRecipesMenu";
 
-const HealthyTastyRecipesSection = ({yesevaOne}) => {
+const HealthyTastyRecipesSection = ({ yesevaOne }) => {
     return (
         <div key={"healthy-and-tasty-uniq"} className="bg-[linear-gradient(to_right_bottom,#ffffffde,#ffffffde),url('/assets/images/healthy-and-tasty/bg-healthy.png')] bg-cover bg-center">
             <div className="container mx-auto px-4 lg:px-0">
@@ -16,7 +16,9 @@ const HealthyTastyRecipesSection = ({yesevaOne}) => {
                         {
                             healthyTastyRecipesMenu.map((item, index) => {
                                 return (
-                                    <Card items={item} index={index} />
+                                    <Fragment key={`healthyTastyRecipesMenu-${index}`}>
+                                        <Card items={item} index={index} />
+                                    </Fragment>
                                 )
                             })
                         }

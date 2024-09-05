@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Card from "@/app/components/card/Card";
 import { featuredMenu } from "@/app/constants/featuredMenu";
 
-const FeaturedSection = ({yesevaOne}) => {
+const FeaturedSection = ({ yesevaOne }) => {
     return (
         <div key={"first-featured-section1"} className="bg-[linear-gradient(to_right_bottom,#ffffffde,#ffffffde),url('/assets/images/featured/featured-bg.png')] bg-cover bg-center cursor-pointer">
             <div className="container mx-auto px-4 lg:px-0">
@@ -15,9 +15,11 @@ const FeaturedSection = ({yesevaOne}) => {
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-20 mt-[3.12rem]">
                         {
-                            featuredMenu.map((item,index) => {
+                            featuredMenu.map((item, index) => {
                                 return (
-                                    <Card items={item} index={index}/>
+                                    <Fragment key={`featured-${index}`}>
+                                        <Card items={item} index={index} />
+                                    </Fragment>
                                 )
                             })
                         }

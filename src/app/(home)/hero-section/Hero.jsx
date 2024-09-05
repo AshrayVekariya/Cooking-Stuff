@@ -1,5 +1,5 @@
 'use client';
-import React from "react";
+import React, { Fragment } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import HeroCard from "./HeroCard";
@@ -78,9 +78,11 @@ const HeroSection = ({ yesevaOne }) => {
                 dynamicHeight={false}
             >
                 {
-                    data.map((items) => {
+                    data.map((items,index) => {
                         return (
-                            <HeroCard data={items} />
+                            <Fragment key={`hero-data-${index}`}>
+                                <HeroCard data={items} />
+                            </Fragment>
                         )
                     })
                 }

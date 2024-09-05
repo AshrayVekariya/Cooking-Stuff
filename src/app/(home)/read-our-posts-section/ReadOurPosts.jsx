@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { readOurPostMenu } from "@/app/constants/readOurPostsMenu";
 import Posts from "./PostCard";
 
-const ReadOurPostsSection = ({yesevaOne}) => {
+const ReadOurPostsSection = ({ yesevaOne }) => {
     return (
         <div key={"post"} className="bg-[#FFF2F2]">
             <div className="container mx-auto px-4 lg:px-0">
@@ -17,7 +17,9 @@ const ReadOurPostsSection = ({yesevaOne}) => {
                         {
                             readOurPostMenu.map((item, index) => {
                                 return (
-                                    <Posts items={item} index={index} yesevaOne={yesevaOne} />
+                                    <Fragment key={`readOurPostMenu-${index}`}>
+                                        <Posts items={item} index={index} yesevaOne={yesevaOne} />
+                                    </Fragment>
                                 )
                             })
                         }

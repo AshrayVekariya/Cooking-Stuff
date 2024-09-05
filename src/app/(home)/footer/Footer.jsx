@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PrivacyMenu from "./PrivacyMenu";
 
 const privacyMenu = [
@@ -10,7 +10,7 @@ const privacyMenu = [
     },
     {
         label: 'Support'
-    }   
+    }
 ]
 
 const FooterSection = () => {
@@ -21,9 +21,11 @@ const FooterSection = () => {
                     <p className="text-xl">@ Copyright 2022. All Rights Reserved by Cooking Stuff</p>
                     <div className="column md:flex mt-3 lg:mt-0 gap-10">
                         {
-                            privacyMenu.map((menu,index)=>{
-                                return(
-                                    <PrivacyMenu menu={menu} index={index}/>
+                            privacyMenu.map((menu, index) => {
+                                return (
+                                    <Fragment key={`footer-menu-${index}`}>
+                                        <PrivacyMenu menu={menu} index={index} />
+                                    </Fragment>
                                 )
                             })
                         }
